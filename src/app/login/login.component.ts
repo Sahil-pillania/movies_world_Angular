@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
   this.errorMsg = "";
   let res = this.auth.login(this.username, this.password);
   if(res === 200){
-    this.router.navigate(['home'])
+    this.router.navigate(['home']);
   
   }else{
   this.errorMsg = "Check the fields again";
